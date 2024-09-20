@@ -3,9 +3,12 @@ package main
 import (
 	"app-version-management-phonepe-lld/versionmanager"
 	"fmt"
+	"time"
 )
 
 func main() {
+
+	start := time.Now()
 	avms := versionmanager.NewAppVersionManagementSystem()
 
 	// Sample device IDs
@@ -47,4 +50,8 @@ func main() {
 	} else {
 		fmt.Println("Beta rollout completed")
 	}
+
+	// End the timer just before the program exits
+	elapsed := time.Since(start)
+	fmt.Printf("\n⏱️ Total execution time: %s\n", elapsed)
 }
