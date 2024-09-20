@@ -2,13 +2,13 @@ package versionmanager
 
 import "fmt"
 
-// Dummy function to create a diff pack between two versions.
-func createDiffPack(fromVersion []byte, toVersion []byte) []byte {
+// CreateDiffPack Dummy function to create a diff pack between two versions.
+func CreateDiffPack(fromVersion []byte, toVersion []byte) []byte {
 	// Implement real diff logic here
 	return append(fromVersion, toVersion...)
 }
 
-// Dummy function to simulate installing an app.
+// InstallApp Dummy function to simulate installing an app.
 func InstallApp(versionID string) {
 	fmt.Printf("Installing app version: %s\n", versionID)
 }
