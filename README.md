@@ -70,7 +70,7 @@ Run the following command to execute the unit tests:
 
 bash
 
-go test -v
+go test -v ./versionmanager
 
 This will run the tests located in app_version_manager_test.go and display the test results.
 Modules
